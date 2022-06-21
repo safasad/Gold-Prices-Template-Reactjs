@@ -1,0 +1,19 @@
+/* start variables */
+:root {
+  --color-primary: #bd9030;
+}
+/* end variables */
+
+/* start shared classes */
+.container-1 {
+  height: fit-content !important;
+  margin-top: 10px !important;
+
+  border: 0.5px solid var(--color-primary);
+  color: var(--color-primary);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}

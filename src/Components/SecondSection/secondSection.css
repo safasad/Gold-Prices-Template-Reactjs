@@ -1,0 +1,42 @@
+/* start instant buy and sell form */
+.formButton,
+.priceLimitInput,
+.orderType {
+  width: 49% !important;
+}
+.buyBtn {
+  border-bottom: 5px solid var(--color-primary) !important;
+}
+
+.formInput {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid #3a3a3a !important;
+}
+.quantityFiled,
+.priceLimit,
+.OrderValueSummary,
+.goldBalance {
+  background-color: black !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.static-value{
+	position:absolute;
+	right:3px;
+	font-weight:bold;
+	font-size:0.8em;
+	top:9px;
+}
+.OrderValueSummary {
+  background-color: #323232 !important;
+}
+p {
+  margin: 0 !important;
+  padding: 8px;
+}
+/* end instant buy and sell form */
