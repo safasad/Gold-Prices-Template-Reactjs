@@ -24,12 +24,12 @@ const AccountBalance = () => {
     },
   ];
   return (
-    <div class="col container-1 me-4 p-2">
+    <div className="col container-1 me-4 p-2">
       <div>
         {/* start header  */}
-        <div class="d-flex justify-content-between mb-4">
+        <div className="d-flex justify-content-between mb-4">
           <h5>Account Balance</h5>
-          <div class="icon">
+          <div className="icon">
             <div></div>
             <div></div>
             <div></div>

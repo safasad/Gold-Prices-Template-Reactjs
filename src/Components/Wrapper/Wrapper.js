@@ -1,24 +1,24 @@
-import React from 'react'
-import FirstSectionWrapper from './../FirstSection/Wrapper';
-import InstantSellAndBuy from './../SecondSection/InstantSellAndBuy';
-import AccountBalance from './../LastSection/AccountBalance';
+import React from "react";
+import FirstSectionWrapper from "./../FirstSection/Wrapper";
+import InstantSellAndBuy from "./../SecondSection/InstantSellAndBuy";
+import AccountBalance from "./../LastSection/AccountBalance";
 
 const Wrapper = () => {
   return (
     <div className="container-fluid p-5">
       <div className="row">
         <div className="col">
-          <FirstSectionWrapper/>
+          <FirstSectionWrapper />
         </div>
         <div className="col">
-          <InstantSellAndBuy/>
+          <InstantSellAndBuy />
         </div>
         <div className="col">
-          <AccountBalance/>
+          <AccountBalance />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Wrapper
+export default Wrapper;
