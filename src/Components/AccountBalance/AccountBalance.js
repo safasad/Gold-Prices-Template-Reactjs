@@ -9,18 +9,22 @@ const AccountBalance = () => {
     {
       title: "Available",
       number: "1350gm",
+      class: "fw-bold",
     },
     {
       title: "Withdrawal",
       number: "EGP 92.275.00",
+      class: "",
     },
     {
       title: "Total",
       number: "100gm",
+      class: "",
     },
     {
       title: "Value",
       number: "10gm",
+      class: "",
     },
   ];
   return (
@@ -37,8 +41,8 @@ const AccountBalance = () => {
         </div>
         {/*  end header  */}
         {/* <!-- start cards --> */}
-        <Card center={center} items={goldBalance} />
-        <Card title="Cash balance" number="EGP 100.000.00" />
+        <Card center={center} items={goldBalance}  />
+        <Card title="Cash balance" number="EGP 100.000.00" class='fw-bold' />
         <Card title="Unrealized P/L" number="EGP 950.024.00" />
         <Card title="Funds in withdrawal" number="EGP 950.024.00" />
         <Card title="Portfolio value" number="EGP 90.183" />

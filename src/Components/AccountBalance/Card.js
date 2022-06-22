@@ -12,7 +12,9 @@ const Card = (props) => {
               {props.items.map((item) => (
                 <div className="d-flex justify-content-between">
                   <p>{item.title}</p>
-                  <p className=" text-light fw-bold">{item.number}</p>
+                  <p className={`text-light ${item.class}`}>
+                    {item.number}
+                  </p>
                 </div>
               ))}
             </div>
@@ -22,7 +24,9 @@ const Card = (props) => {
         <div className="mb-3 d-flex justify-content-between priceLimit formInput ">
           <p className=" text-light ">{props.title && props.title}</p>
           {/* <!-- Will be a dynamic value come from server --> */}
-          <p className=" text-light fw-bold ">{props.number && props.number}</p>
+          <p className={`text-light ${props.class ? props.class : ""}`}>
+            {props.number && props.number}
+          </p>
         </div>
       )}
     </>
