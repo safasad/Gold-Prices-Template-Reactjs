@@ -4,8 +4,13 @@
 .orderType {
   width: 49% !important;
 }
-.buyBtn {
+.activeBtn {
   border-bottom: 5px solid var(--color-primary) !important;
+}
+.inactiveBtn {
+  background-color: #323232 !important;
+  border:none !important;
+  color:rgba(255, 255, 255, 0.692) !important;
 }
 
 .formInput {
@@ -25,12 +30,12 @@
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
 }
-.static-value{
-	position:absolute;
-	right:3px;
-	font-weight:bold;
-	font-size:0.8em;
-	top:2px;
+.static-value {
+  position: absolute;
+  right: 3px;
+  font-weight: bold;
+  font-size: 0.8em;
+  top: 2px;
 }
 .OrderValueSummary {
   background-color: #323232 !important;

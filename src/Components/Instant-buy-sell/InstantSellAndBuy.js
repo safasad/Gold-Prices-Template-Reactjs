@@ -27,12 +27,14 @@ const InstantSellAndBuy = () => {
           <BuyForm
             buyFormHandler={buyFormHandler}
             sellFormHandler={sellFormHandler}
+            isShownBuyForm={buyForm}
           />
         )}
         {sellForm && (
           <SellForm
             buyFormHandler={buyFormHandler}
             sellFormHandler={sellFormHandler}
+            isShownSellForm={sellForm}
           />
         )}
 
