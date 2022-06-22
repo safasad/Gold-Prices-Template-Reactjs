@@ -1,4 +1,6 @@
 import React from "react";
+import { faCaretUp, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LiveMetalPrices = () => {
   return (
@@ -21,13 +23,13 @@ const LiveMetalPrices = () => {
             <div className="d-flex   justify-content-between">
               <p className=" text-success">Buy</p>
               <p className=" text-success">
-                <i className="fa fa-caret-up"></i> EGP 980.00
+                <FontAwesomeIcon icon={faCaretUp} /> EGP 980.00
               </p>
             </div>
             <div className="d-flex justify-content-between">
               <p className="text-danger">Sell</p>
               <p className=" text-danger ">
-                <i className="fa fa-caret-down"></i> EGP 970.00
+                <FontAwesomeIcon icon={faCaretDown} /> EGP 970.00
               </p>
             </div>
             <div className="d-flex justify-content-between">
