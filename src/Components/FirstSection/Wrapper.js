@@ -1,5 +1,5 @@
 import React from "react";
-import LiveMetalPrices from "./LiveMetalPricesPart/LiveMetalPrices";
+import LiveMetalPrices from "./LiveMetalPrices/LiveMetalPrices";
 import LineChart from "./ChartPart/LineChart";
 
 const GoldPricesSectionWrapper = () => {

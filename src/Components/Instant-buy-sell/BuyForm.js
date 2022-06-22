@@ -1,16 +1,23 @@
 import React from "react";
 
-const Form = () => {
+const BuyForm = (props) => {
   return (
     <>
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         {/* <!-- Start form buttons --> */}
-        <button className="btn btn-secondary formButton buyBtn me-2 fw-bold mb-3">
+        <button
+          onClick={props.buyFormHandler}
+          className="btn btn-secondary formButton buyBtn me-2 fw-bold mb-3"
+        >
           BUY
         </button>
-        <button className="btn btn-secondary formButton fw-bold mb-3" disabled>
+        <button
+          onClick={props.sellFormHandler}
+          className="btn btn-secondary formButton fw-bold mb-3"
+        >
           SELL
         </button>
+
         {/* <!-- End form buttons --> */}
 
         <div className="mb-3">
@@ -33,7 +40,7 @@ const Form = () => {
                 backgroundColor: "black",
                 border: "none",
               }}
-              defaultValue='123'
+              defaultValue="123"
             />
           </div>
         </div>
@@ -85,4 +92,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default BuyForm;
