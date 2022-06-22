@@ -2,14 +2,13 @@ import React from "react";
 import "../section.css";
 import Plot from "react-plotly.js";
 
-
 /**
  * Line Chart component
  * This component is responsible for displaying Gold prices in a line chart
  * @returns Line Chart Layout
  */
 const LineChart = () => {
-    //* Line chart data to be displayed on the graph */
+  //* Line chart data to be displayed on the graph */
   const plotData = [
     {
       x: [
@@ -25,10 +24,18 @@ const LineChart = () => {
     },
   ];
 
+  const plotLayout = {
+    width: 400,
+    height: 240,
+    paper_bgcolor: "black",
+    plot_bgcolor: "black",
+    "yaxis.title": "Gold Prices",
+  };
+
   return (
     <>
       {/* <!-- start chart card --> */}
-      <div className="chart container-1 p-2">
+      <div className="chart container-1 p-2 ">
         <h5 className="d-inline-block">Price charts :</h5>
         <div className="mt-3 w-25 d-inline-block">
           <select
@@ -49,8 +56,10 @@ const LineChart = () => {
         {/* Set the chart using Plot component */}
         <Plot
           data={plotData} // Get data from plotData array (initialized above)
-          layout={{ width: 400, height: 240, title: "Gold Prices" }} // Set layout of the chart
+          layout={plotLayout} // Set layout of the chart
+          config={{ responsive: true }}
         />
+
         {/* End of chart */}
         <div className="mt-3 w-50">
           <select
@@ -62,7 +71,9 @@ const LineChart = () => {
               backgroundColor: "black",
             }}
           >
-            <option>Day</option>
+            <option selected="true">Day</option>
+            <option>Week</option>
+            <option>Month</option>
           </select>
         </div>
       </div>

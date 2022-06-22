@@ -5,7 +5,7 @@ const Form = () => {
     <>
       <form>
         {/* <!-- Start form buttons --> */}
-        <button className="btn btn-secondary formButton buyBtn fw-bold mb-3">
+        <button className="btn btn-secondary formButton buyBtn me-2 fw-bold mb-3">
           BUY
         </button>
         <button className="btn btn-secondary formButton fw-bold mb-3" disabled>

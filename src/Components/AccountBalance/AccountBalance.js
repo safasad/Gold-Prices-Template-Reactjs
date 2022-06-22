@@ -1,5 +1,5 @@
 import React from "react";
-import "./lastSection.css";
+import "./AccountBalance.css";
 import Card from "./Card";
 
 const AccountBalance = () => {

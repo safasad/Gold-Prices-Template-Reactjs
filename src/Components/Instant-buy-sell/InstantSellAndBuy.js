@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import "./secondSection.css";
+import "./InstantSellAndBuy.css";
 
 const InstantSellAndBuy = () => {
   return (

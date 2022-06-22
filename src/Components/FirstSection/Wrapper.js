@@ -1,8 +1,8 @@
 import React from "react";
 import LiveMetalPrices from "./LiveMetalPricesPart/LiveMetalPrices";
-import LineChart from './ChartPart/LineChart';
+import LineChart from "./ChartPart/LineChart";
 
-const FirstSectionWrapper = () => {
+const GoldPricesSectionWrapper = () => {
   return (
     <div className="col  me-4  ">
       <LiveMetalPrices />
@@ -11,4 +11,4 @@ const FirstSectionWrapper = () => {
   );
 };
 
-export default FirstSectionWrapper;
+export default GoldPricesSectionWrapper;
