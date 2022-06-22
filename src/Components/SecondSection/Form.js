@@ -33,7 +33,7 @@ const Form = () => {
                 backgroundColor: "black",
                 border: "none",
               }}
-              value="123"
+              defaultValue='123'
             />
           </div>
         </div>
@@ -46,7 +46,7 @@ const Form = () => {
           </div>
 
           <div className="mb-3 d-flex justify-content-between priceLimit formInput priceLimitInput">
-            <label for="priceLimit" className=" text-light p-2 ">
+            <label htmlFor="priceLimit" className=" text-light p-2 ">
               Price limit
             </label>
             <div className="d-inline-block position-relative w-50">
@@ -60,7 +60,7 @@ const Form = () => {
                   backgroundColor: "black",
                   border: "none",
                 }}
-                value="00.00"
+                defaultValue="00.00"
               />
             </div>
           </div>
