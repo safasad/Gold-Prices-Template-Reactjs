@@ -47,7 +47,7 @@ const LineChart = () => {
               backgroundColor: "black",
             }}
           >
-            <option selected={true}>Gold</option>
+            <option>Gold</option>
             <option>Salver</option>
             <option>Platinum</option>
           </select>
@@ -71,7 +71,7 @@ const LineChart = () => {
               backgroundColor: "black",
             }}
           >
-            <option selected="true">Day</option>
+            <option >Day</option>
             <option>Week</option>
             <option>Month</option>
           </select>

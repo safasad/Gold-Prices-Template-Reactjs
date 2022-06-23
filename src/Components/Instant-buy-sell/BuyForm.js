@@ -47,7 +47,7 @@ const BuyForm = (props) => {
           </select>
         </div>
         <div className="mb-3 d-flex justify-content-between quantityFiled ">
-          <label for="quantity" className=" text-light p-2">
+          <label htmlFor="quantity" className=" text-light p-2">
             Quantity
           </label>
           <div className="d-inline-block position-relative w-25">
