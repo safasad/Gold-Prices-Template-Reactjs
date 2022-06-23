@@ -1,5 +1,5 @@
 import React from "react";
-import GoldPricesSectionWrapper from "./../FirstSection/Wrapper";
+import GoldPricesSectionWrapper from "./../Gold-prices/Wrapper";
 import InstantSellAndBuy from "./../Instant-buy-sell/InstantSellAndBuy";
 import AccountBalance from "./../AccountBalance/AccountBalance";
 
