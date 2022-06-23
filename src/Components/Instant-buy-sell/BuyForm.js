@@ -46,17 +46,16 @@ const BuyForm = (props) => {
             <option>Platinum</option>
           </select>
         </div>
-        <div className="mb-3 d-flex justify-content-between quantityFiled ">
-          <label htmlFor="quantity" className=" text-light p-2">
+        <div className="mb-3 d-flex justify-content-between quantityFiled w-100 ">
+          <label htmlFor="quantity" className=" text-light p-2 w-75">
             Quantity
           </label>
-          <div className="d-inline-block position-relative w-25">
-            <p className="static-value text-light">gm</p>
+          <div class="input-group w-25">
             <input
               maxLength={7}
               ref={quantityRef}
               id="quantity"
-              className=" text-light w-100"
+              className=" text-light w-50 "
               style={{
                 padding: "8px",
                 color: "white",
@@ -66,6 +65,17 @@ const BuyForm = (props) => {
               defaultValue="123"
               placeholder="0"
             />
+            <span
+              class="input-group-text"
+              style={{
+                padding: "8px",
+                color: "white",
+                background: "none",
+                border: "none",
+              }}
+            >
+              gm
+            </span>
           </div>
         </div>
 
@@ -78,8 +88,40 @@ const BuyForm = (props) => {
               <option> type 3</option>
             </select>
           </div>
+          <div className="mb-3 d-flex justify-content-between priceLimit w-100 ">
+            <label htmlFor="priceLimit" className=" text-light p-2">
+              PriceLimit
+            </label>
+            <div class="input-group" style={{ width: "44%" }}>
+              <input
+                maxLength={7}
+                ref={priceRef}
+                id="priceLimit"
+                className=" text-light w-50 "
+                style={{
+                  padding: "8px",
+                  color: "white",
+                  backgroundColor: "black",
+                  border: "none",
+                }}
+                defaultValue="00.00"
+                placeholder="0"
+              />
+              <span
+                class="input-group-text"
+                style={{
+                  padding: "8px",
+                  color: "white",
+                  background: "none",
+                  border: "none",
+                }}
+              >
+                EGP
+              </span>
+            </div>
+          </div>
 
-          <div className="mb-3 d-flex justify-content-between priceLimit formInput priceLimitInput">
+          {/* <div className="mb-3 d-flex justify-content-between priceLimit formInput priceLimitInput">
             <label htmlFor="priceLimit" className=" text-light p-2 ">
               Price limit
             </label>
@@ -100,7 +142,7 @@ const BuyForm = (props) => {
                 defaultValue="00.00"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mb-5 d-flex justify-content-between OrderValueSummary ">
           <p className=" text-light">Order value summary</p>
