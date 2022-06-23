@@ -2,6 +2,12 @@
 
 This project was to complete acceptance in front-end intership at Goldady.
 
+## Development
+ - React.js
+ - Bootstrap
+ - ReactFontawesome
+ - plotly
+
 ## Available Scripts
 
 In the project directory, you can run:
