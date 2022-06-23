@@ -121,28 +121,7 @@ const BuyForm = (props) => {
             </div>
           </div>
 
-          {/* <div className="mb-3 d-flex justify-content-between priceLimit formInput priceLimitInput">
-            <label htmlFor="priceLimit" className=" text-light p-2 ">
-              Price limit
-            </label>
-            <div className="d-inline-block position-relative w-50">
-              <p className="static-value text-light">EGP</p>
-              <input
-                maxLength={5}
-                placeholder="0.00"
-                ref={priceRef}
-                id="priceLimit"
-                className=" text-light w-100"
-                style={{
-                  padding: "8px",
-                  color: "white",
-                  backgroundColor: "black",
-                  border: "none",
-                }}
-                defaultValue="00.00"
-              />
-            </div>
-          </div> */}
+        
         </div>
         <div className="mb-5 d-flex justify-content-between OrderValueSummary ">
           <p className=" text-light">Order value summary</p>
