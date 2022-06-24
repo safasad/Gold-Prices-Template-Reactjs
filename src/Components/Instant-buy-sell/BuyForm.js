@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const BuyForm = (props) => {
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);
+  const [summaryValue, setSummaryValue] = useState(0);
   const quantityRef = useRef();
   const priceRef = useRef();
   const metalRef = useRef();
@@ -19,6 +20,12 @@ const BuyForm = (props) => {
   // set order summary
   let OrderValueSummary = quantity * price;
 
+  // To Rerender component only if order Summary value is changed
+  useEffect(() => {
+  setSummaryValue(OrderValueSummary);
+
+  },[OrderValueSummary])
+
   /**
    * Function to handle the reset button of the form data
    */
@@ -27,7 +34,7 @@ const BuyForm = (props) => {
     priceRef.current.value = "";
     metalRef.current.value = "Gold";
     orderTypeRef.current.value = "Order type";
-    OrderValueSummary = 0;
+    setSummaryValue(0) ;
   };
 
   return (
@@ -104,7 +111,7 @@ const BuyForm = (props) => {
         </div>
         <div className="mb-5 d-flex justify-content-between OrderValueSummary ">
           <p className=" text-light">Order value summary</p>
-          <p className=" text-light">{OrderValueSummary}</p>
+          <p className=" text-light">{summaryValue}</p>
         </div>
 
         <div className="d-flex justify-content-between ">
