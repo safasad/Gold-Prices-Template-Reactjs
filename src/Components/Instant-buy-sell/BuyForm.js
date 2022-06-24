@@ -35,6 +35,8 @@ const BuyForm = (props) => {
     metalRef.current.value = "Gold";
     orderTypeRef.current.value = "Order type";
     setSummaryValue(0) ;
+    setQuantity(0);
+    setPrice(0);
   };
 
   return (
