@@ -39,7 +39,7 @@ const LineChart = () => {
         <h5 className="d-inline-block">Price charts :</h5>
         <div className="mt-3 w-25 d-inline-block">
           <select
-            className="form-select fw-bold"
+            className="form-select chartSelect fw-bold"
             style={{
               color: "white",
               border: "none",

@@ -44,4 +44,21 @@ p {
   margin: 0 !important;
   padding: 8px;
 }
+input ,.input-group span{
+  border: none !important;
+  background:  none !important;
+  color: white !important;
+  padding: 8px !important;
+}
+input:focus{
+  border:0.5px solid rgb(56, 55, 55)!important;
+  outline:  none !important;
+  box-shadow: none !important;
+
+}
+
+input::placeholder{
+  color: white !important;
+
+}
 /* end instant buy and sell form */

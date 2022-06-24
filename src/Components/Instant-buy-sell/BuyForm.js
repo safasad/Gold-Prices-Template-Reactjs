@@ -1,10 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 const BuyForm = (props) => {
+  const [quantity, setQuantity] = useState(0);
+  const [price, setPrice] = useState(0);
   const quantityRef = useRef();
   const priceRef = useRef();
   const metalRef = useRef();
   const orderTypeRef = useRef();
+
+  // Handle order summary value
+  const quantityHandler = (e) => {
+    setQuantity(e.target.value);
+  };
+  const priceHandler = (e) => {
+    setPrice(e.target.value);
+  };
+
+  // set order summary
+  let OrderValueSummary = quantity * price;
 
   /**
    * Function to handle the reset button of the form data
@@ -14,6 +27,7 @@ const BuyForm = (props) => {
     priceRef.current.value = "";
     metalRef.current.value = "Gold";
     orderTypeRef.current.value = "Order type";
+    OrderValueSummary = 0;
   };
 
   return (
@@ -52,30 +66,14 @@ const BuyForm = (props) => {
           </label>
           <div className="input-group w-25">
             <input
-              maxLength={7}
+              onChange={quantityHandler}
               ref={quantityRef}
               id="quantity"
               className=" text-light w-50 "
-              style={{
-                padding: "8px",
-                color: "white",
-                backgroundColor: "black",
-                border: "none",
-              }}
               defaultValue="123"
               placeholder="0"
             />
-            <span
-              className="input-group-text"
-              style={{
-                padding: "8px",
-                color: "white",
-                background: "none",
-                border: "none",
-              }}
-            >
-              gm
-            </span>
+            <span className="input-group-text">gm</span>
           </div>
         </div>
 
@@ -94,36 +92,19 @@ const BuyForm = (props) => {
             </label>
             <div className="input-group" style={{ width: "44%" }}>
               <input
-                maxLength={7}
+                onChange={priceHandler}
                 ref={priceRef}
                 id="priceLimit"
                 className=" text-light w-50 "
-                style={{
-                  padding: "8px",
-                  color: "white",
-                  backgroundColor: "black",
-                  border: "none",
-                }}
-                defaultValue="00.00"
-                placeholder="0"
+                placeholder="00.00"
               />
-              <span
-                className="input-group-text"
-                style={{
-                  padding: "8px",
-                  color: "white",
-                  background: "none",
-                  border: "none",
-                }}
-              >
-                EGP
-              </span>
+              <span className="input-group-text">EGP</span>
             </div>
           </div>
         </div>
         <div className="mb-5 d-flex justify-content-between OrderValueSummary ">
           <p className=" text-light">Order value summary</p>
-          <p className=" text-light">00000000</p>
+          <p className=" text-light">{OrderValueSummary}</p>
         </div>
 
         <div className="d-flex justify-content-between ">
