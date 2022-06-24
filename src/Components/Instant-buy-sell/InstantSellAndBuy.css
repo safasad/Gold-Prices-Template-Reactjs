@@ -2,7 +2,7 @@
 .formButton,
 .priceLimitInput,
 .orderType {
-  width: 49% !important;
+  width: 48% !important;
 }
 .activeBtn {
   border-bottom: 5px solid var(--color-primary) !important;

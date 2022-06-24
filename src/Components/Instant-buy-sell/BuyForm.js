@@ -50,7 +50,7 @@ const BuyForm = (props) => {
           <label htmlFor="quantity" className=" text-light p-2 w-75">
             Quantity
           </label>
-          <div class="input-group w-25">
+          <div className="input-group w-25">
             <input
               maxLength={7}
               ref={quantityRef}
@@ -66,7 +66,7 @@ const BuyForm = (props) => {
               placeholder="0"
             />
             <span
-              class="input-group-text"
+              className="input-group-text"
               style={{
                 padding: "8px",
                 color: "white",
@@ -92,7 +92,7 @@ const BuyForm = (props) => {
             <label htmlFor="priceLimit" className=" text-light p-2">
               PriceLimit
             </label>
-            <div class="input-group" style={{ width: "44%" }}>
+            <div className="input-group" style={{ width: "44%" }}>
               <input
                 maxLength={7}
                 ref={priceRef}
@@ -108,7 +108,7 @@ const BuyForm = (props) => {
                 placeholder="0"
               />
               <span
-                class="input-group-text"
+                className="input-group-text"
                 style={{
                   padding: "8px",
                   color: "white",
@@ -120,8 +120,6 @@ const BuyForm = (props) => {
               </span>
             </div>
           </div>
-
-        
         </div>
         <div className="mb-5 d-flex justify-content-between OrderValueSummary ">
           <p className=" text-light">Order value summary</p>

@@ -17,6 +17,8 @@ const InstantSellAndBuy = () => {
     setBuyForm(false);
     setSellForm(true);
   };
+
+  
   // start handle render of buy and sell form
   return (
     <div className="col container-1 me-4 p-2">
